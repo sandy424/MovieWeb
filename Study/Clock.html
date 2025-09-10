@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div id="root"></div>
+</body>
+<script src="https://unpkg.com/react@18.3.0/umd/react.development.min.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.0/umd/react-dom.development.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+    const root = document.getElementById("root");
+
+    function App() {
+        const [amount, setAmount] = React.useState(0);
+        const [inverted, setInverted] = React.useState(false);
+        return(
+            <div>
+                <h1>Time Attack</h1>
+                <input htmlFor='hour' placeholder='Hour' />
+            </div>
+        );
+    }
+        
+    ReactDOM.render(<App />, root); 
+</script>
+</html>
