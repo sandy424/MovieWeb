@@ -52,14 +52,14 @@
 
         return(
             <div>
-                <h1>Super Converter</h1>
+                <h1>변환기</h1>
                 <select value={index} onChange={onSelect}>
                     <option value="xx">Select your option</option>
                     <option value="0">Minutes & Hours</option>
                     <option value="1">Km & Miles</option>
                 </select>
                 <hr/>
-                {index === "xx" ? "Please select your units" : null}
+                {index === "xx" ? "Please select your options" : null}
                 {index === "0" ? <TimeChanger/> : null}
                 {index === "1" ? <KmToMiles/> : null}
             </div>
