@@ -1,27 +1,28 @@
 import {useEffect, useState} from "react";
 
 function App() {
-  
-  const [key, setKey] = useState("");
-  const [counter, setValue] = useState(0);
-
-  const onClick = () => setValue((prev) => prev + 1);
-  const onChange = (event) => setKey(event.target.value);
-
-  useEffect(() => {
-    console.log("Call the API....");
-  }, []);
-  useEffect(() => {
-    if(key !== "" && key.length > 5){
-      console.log("Search for", key);
+  const [value, setValue] = useState("");
+  const [todo, setTodo] = useState([]);
+  const onChange = (event) => setValue(event.target.value);
+  const onSubmit = (event) => {
+    event.preventDefault();
+    if(value === "") {
+      return;
     }
-  }, [key]);
-
+    setTodo(currentArray => [value, ...currentArray]);
+    setValue("");
+  };  
+  console.log(todo);
   return (
     <div>
-      <input type="text" placeholder="Search here" onChange={onChange} value={key}/>
-      <h1>{counter}</h1>
-      <button onClick={onClick}>Click me</button>
+      <h2>My To Do ({todo.length})</h2>
+      <form onSubmit={onSubmit}>
+        <input value={value} type="text" placeholder="Write your to do.." onChange={onChange} />
+        <button>Add To Do</button>
+      </form>
+      <hr/>
+      {todo.map((item, index) => 
+        <li key={index}>{item}</li>)}
     </div>
   );
 }
