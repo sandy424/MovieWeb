@@ -1,6 +1,7 @@
 import {Routes, Route} from "react-router-dom";
 import Main from './component/Main';
 import Movie_list from './component/Movie_list';
+import Movie from "./component/Movie";
 
 function App() {
     return(
