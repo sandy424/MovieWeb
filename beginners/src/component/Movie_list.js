@@ -12,7 +12,7 @@ function Movie_list() {
       setMovies(json.data.movies);
       setTimeout(() => {
         setLoading(false);
-      }, 2000); // 2초 동안 Loading 유지
+      }, 1000); // 2초 동안 Loading 유지
       };
     useEffect(() => {
       getMovies();
