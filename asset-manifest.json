@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": " //sandy424.github.io/beginners/static/js/main.dc2d2b02.js",
-    "index.html": " //sandy424.github.io/beginners/index.html",
-    "main.dc2d2b02.js.map": " //sandy424.github.io/beginners/static/js/main.dc2d2b02.js.map"
+    "main.js": "/Movieweb/static/js/main.dc2d2b02.js",
+    "index.html": "/Movieweb/index.html",
+    "main.dc2d2b02.js.map": "/Movieweb/static/js/main.dc2d2b02.js.map"
   },
   "entrypoints": [
     "static/js/main.dc2d2b02.js"
