@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/MoiveWeb/static/js/main.a8ae6a75.js",
+    "main.js": "/MoiveWeb/static/js/main.ab4fe0e4.js",
     "index.html": "/MoiveWeb/index.html",
-    "main.a8ae6a75.js.map": "/MoiveWeb/static/js/main.a8ae6a75.js.map"
+    "main.ab4fe0e4.js.map": "/MoiveWeb/static/js/main.ab4fe0e4.js.map"
   },
   "entrypoints": [
-    "static/js/main.a8ae6a75.js"
+    "static/js/main.ab4fe0e4.js"
   ]
 }
