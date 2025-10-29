@@ -4,11 +4,10 @@ import "../style/style-main.css"
 function Main() {
     const navigate = useNavigate();
     const onClick = () => {
-        navigate("/Movie_list")
+        navigate("/Movie_list");
     }
     const style = {
         color: "yellow",
-        fontsize: "98px"
     }
     return(
         <div>
