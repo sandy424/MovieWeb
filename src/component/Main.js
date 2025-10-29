@@ -1,5 +1,5 @@
 import {useNavigate} from "react-router-dom";
-import "../style/style-main.css"
+
 
 function Main() {
     const navigate = useNavigate();
@@ -11,7 +11,6 @@ function Main() {
     }
     return(
         <div>
-            <h2 style={style}>MoviePickr</h2>
             <button onClick={onClick}>Let's watch</button>
         </div>
     )

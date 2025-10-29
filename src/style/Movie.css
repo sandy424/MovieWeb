@@ -1,0 +1,15 @@
+.movie {
+    background-color: #cdf7f4;
+    color: #061540;
+    margin-bottom: 70px;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 300;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
+    grid-gap: 20px;
+}
+.movie_img{
+    
+}
