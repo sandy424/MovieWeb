@@ -3,7 +3,8 @@
 function Navigate() {
 
     const style = {
-        color: "yellow",
+        color: "navy",
+        size: "36px",
     }
     return(
         <div>

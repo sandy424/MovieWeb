@@ -17,7 +17,8 @@ function Detail() {
 
     return(
         <div>
-            <h2>{movie.title}</h2>
+            <h2>Detail</h2>
+            {/* <h2>{movie.title}</h2>
             <Movie
                 key={movie.id}
                 id={movie.id}
@@ -26,7 +27,7 @@ function Detail() {
                 year={movie.year}
                 rating={movie.rating}
                 genres={movie.genres}
-            />
+            /> */}
         </div>
     );
 }

@@ -3,9 +3,12 @@ import {Link} from "react-router-dom";
 import style from '../style/Movie.css';
 
 function Movie({ id, title, coverImg, year, summary, genres}) {
+    console.log({id, title, coverImg, year, summary, genres});
     return(
         <div className={style.movie}>
-            <img src={coverImg} alt={title} className={style.movie_img}/>
+            <Link to={`/movie/${id}`}>
+                <img src={coverImg} alt={title} className={style.movie_img}/>
+            </Link>
             <div>
                 <h2 className={style.movie_title}>
                 <Link to={`/movie/${id}`}>{title}</Link>
@@ -28,6 +31,7 @@ Movie.propTypes = {
     coverImg: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired,
     genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+    year: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 export default Movie;
