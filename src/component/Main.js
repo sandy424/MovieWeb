@@ -6,9 +6,6 @@ function Main() {
     const onClick = () => {
         navigate("/Movie_list");
     }
-    const style = {
-        color: "yellow",
-    }
     return(
         <div>
             <button onClick={onClick}>Let's watch</button>
