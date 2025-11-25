@@ -17,7 +17,6 @@ function Movie_list() {
     useEffect(() => {
       getMovies();
     }, []);
-
   console.log(movies);
   return (
     <div>
